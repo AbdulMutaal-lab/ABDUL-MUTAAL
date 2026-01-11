@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PowerCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Take voltage input from user
+        System.out.print("Enter the voltage (in volts): ");
+        double voltage = input.nextDouble();
+
+        // Take current input from user
+        System.out.print("Enter the current (in amperes): ");
+        double current = input.nextDouble();
+
+        // Calculate power in watts
+        double power = voltage * current;
+
+        // Display the result
+        System.out.println("The power consumption is " + power + " Watts.");
+
+        input.close();
+    }
+}
